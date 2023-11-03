@@ -1,0 +1,32 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - apps.zsh.io
+  resources:
+  - helloapps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - apps.zsh.io
+  resources:
+  - helloapps/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - apps.zsh.io
+  resources:
+  - helloapps/status
+  verbs:
+  - get
+  - patch
+  - update
