@@ -76,6 +76,12 @@ make manifests
 
 More information can be found via the [Kubebuilder Documentation](https://book.kubebuilder.io/introduction.html)
 
+## Build image
+
+```shell
+make docker-build IMG=hello-operator:v0.0.1
+```
+
 ## License
 
 Copyright 2023 zsh.
