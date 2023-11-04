@@ -80,6 +80,7 @@ More information can be found via the [Kubebuilder Documentation](https://book.k
 
 ```shell
 make docker-build IMG=hello-operator:v0.0.1
+make deploy IMG=lengdanran/hello-operator:v0.0.1
 ```
 
 ## License
