@@ -11,7 +11,7 @@ metadata:
   name: helloapp-v1
 spec:
   # 新增下述内容
-  replicas: 1 # 设置副本数
+  replicas: 3 # 设置副本数
   label: helloapp-v1
   template: # 按照 pod 模板设置 pod 规格
     spec:
